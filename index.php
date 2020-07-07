@@ -1,35 +1,5 @@
 <?php
 
-/*
-
-Install php - sudo yum install php
-curl -sS https://getcomposer.org/installer | php
-cd /var/www/html
-sudo mkdir face
-cd face
-sudo php -d memory_limit=-1 ~/composer.phar require aws/aws-sdk-php
-
-In case if you get memory error - 
-    sudo /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
-    sudo /sbin/mkswap /var/swap.1
-    sudo /sbin/swapon /var/swap.1
-
-sudo wget https://i.pinimg.com/originals/b9/7e/a3/b97ea33b5842c7894b804923c6c05580.jpg
-sudo mv b97ea33b5842c7894b804923c6c05580.jpg sample.jpg
-
-Incase if you are getting any class NOT found error, follow these steps
-
-sudo yum remove php*
-sudo yum remove httpd*
-sudo yum clean all
-sudo yum upgrade -y
-sudo amazon-linux-extras install php7.2
-sudo yum install php-json php-xml php-cli php-mbstring
-sudo yum install httpd
-
-*/
-// error_reporting(0);
-
 require_once(__DIR__ . '/vendor/autoload.php');
 
 use Aws\S3\S3Client;
